@@ -3,4 +3,11 @@ let app = new Vue({
     data : {
         items : ["pushups" , "chest workouts", "biceps workout" ,"legs workout"]
     },
+    methods:{
+
+        addItem(){
+            this.items.push(this.newItem); /*ForAdding*/
+            this.newItem = "";/*ForCleaning*/
+        }
+    }
 })
